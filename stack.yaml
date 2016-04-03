@@ -1,8 +1,10 @@
-resolver: lts-3.6
+resolver: lts-5.11
 packages:
 - '.'
-extra-deps: [rdf4h-1.3.5]
+- location:
+    git: git@github.com:TravisWhitaker/rdf4h.git
+    commit: c90acfb97881feb326e6365f17d79d29bfa9eed4
+extra-deps: [hgal-2.0.0.2]
 flags:
   rdf4h:
     network-uri: true
-    small_base: true
